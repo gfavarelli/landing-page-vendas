@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, 
+h2,
+h3,
+h4,
+p,
+a {
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.conteudo {
+    margin: 0 auto;
+}
+
+.banner {
+    height: 140px;
+    background-color: black;
+    text-align: center;
+}
+
+.menu {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    text-align: center;
+}
+
+.lista-menu.lista-item-terceiro {
+    border-right: none;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.lista-menu {
+   float: left;
+   border-right: 1px solid white;
+}
+
+.lista-menu:hover {
+    background-color: rgb(56, 151, 253);
+}
+
+.lista-menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.texto-promocao {
+    background-color: rgb(96, 96, 96);
+    padding: 16px;
+    text-align: center;
+}
+
+.texto-promocao-2 {
+    background-color: rgb(96, 96, 96);
+    padding: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.texto-promocao h1 {
+    color: white;
+    background: none;
+    animation: animacaoTexto 1.5s linear infinite;
+}
+
+.texto-promocao-2 h1 {
+    color: white;
+    background: none;
+    animation: movimentoDireitaEsquerda 2s linear 0s infinite alternate;
+}
+
+.conteudo-produtos {
+    margin-top: 10px;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.produto {
+    width: 35%;
+    padding: 20px;
+}
+
+.produto:hover {
+    box-shadow: 10px 0px 10px 5px lightgray;
+    border-radius: 20px;
+}
+
+.produto-nome {
+    text-align: center;
+    padding: 5px;
+}
+
+.produto-imagem{
+    width: 100%;
+    text-align: center;
+}
+
+.produto-imagem img {
+    width: 40%;
+}
+
+.produto-descricao {
+    padding: 10px;
+    text-align: justify;
+}
+
+.produto-descricao p {
+    font-size: 16px;
+    margin: 0px;
+    color: black;
+}
+
+.produto-preco {
+    text-align: center;
+    background: rgb(56, 151, 253);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.produto-preco p {
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.produto-comprar {
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape {
+    height: 120px;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape .coluna1, .coluna2, .coluna3 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.rodape-links {
+    display: list-item;
+}
+
+
+.rodape  h4, a, p  {
+    color: white;
+}
+
+.rodape a {
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*produto-detalhes*/
+.produto-detalhes {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+}
+
+.produto-detalhes .box1 {
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto-detalhes .box1 .imagem {
+    width: 280px;
+    
+}
+
+.produto-detalhes .box1 .imagem img {
+    width: 100%;
+}
+
+.produto-detalhes .box2 {
+    width: 70%;
+    height: 300px;
+}
+
+.texto-descricao-produto {
+    color: black;
+}
+
+.produto-detalhes .box2 .pagamento {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.produto-detalhes .box2 .pagamento .btncomprar {
+    padding-left: 20px;
+}
+
+.produto-descricao-grande {
+    border: 2px dashed rgb(56, 151, 253);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size:16px;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: rgb(56, 151, 253);
+    cursor: pointer;
+}
+
+@keyframes animacaoTexto{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.7;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+
+@keyframes movimentoDireitaEsquerda {
+    0%,
+    25% {
+      transform: translateX(0%);
+      left: 0%;
+    }
+    75%,
+    100% {
+      transform: translateX(-100%);
+      left: 100%;
+    }
+  }
